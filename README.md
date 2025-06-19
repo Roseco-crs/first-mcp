@@ -33,7 +33,7 @@ Prompts are reusable message templates for guiding the LLM.
 ```python:
 from fastmcp import Client
 client = Client("server.py")
-
+```
 
 ## How to Execute the code
 * Clone first the repository:
