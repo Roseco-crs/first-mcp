@@ -29,7 +29,8 @@ Prompts are reusable message templates for guiding the LLM.
 * To run the server, we can to use `mcp.run` in the `if __name__=="__main__":` block. Nevertheless, this not mandatory.
 * To have FastMCP run the server for us, we need to use `fastmcp run ` command. For example: `fastmcp run server.py:mcp`
 * Note that FastMCP does not require the `if __name__=="__main__":` block in the server file, and will ignore it if it is present. Instead, it looks for the server object provided in the CLI command (here, `mcp`). If no server object is provided, fastmcp run will automatically search for servers called “mcp”, “app”, or “server” in the file.
-* Don't forget to point the server file while creating an instance of the your client. For instance: ```python:
+* Don't forget to point the server file while creating an instance of the your client. For instance: 
+```python:
 from fastmcp import Client
 client = Client("server.py")
 
