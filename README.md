@@ -24,17 +24,21 @@ Prompts are reusable message templates for guiding the LLM.
 
 
 ## Key Points
-* Clients are asynchronous, so we need to use <asyncio.run()> to run the clients
-* We must enter a client context (<async with client: >) before using the client. We can make multiple client calls within the same context.
-* To run the server, we can to use <mcp.run> in the <__main__> block. Nevertheless, this not mandatory.
-* To have FastMCP run the server for us, we need to use <fastmcp run > command. For example: <fastmcp run server.py:mcp>
-* Note that FastMCP does not require the <__main__> block in the server file, and will ignore it if it is present. Instead, it looks for the server object provided in the CLI command (here, <mcp>). If no server object is provided, fastmcp run will automatically search for servers called “mcp”, “app”, or “server” in the file.
-* Don't forget to point the server file while creating an instance of the your client. For instance: <from fastmcp import Client
-               client = Client("server.py")>
+* Clients are asynchronous, so we need to use `asyncio.run()` to run the clients
+* We must enter a client context (`async with client: `) before using the client. We can make multiple client calls within the same context.
+* To run the server, we can to use `mcp.run` in the `if __name__=="__main__":` block. Nevertheless, this not mandatory.
+* To have FastMCP run the server for us, we need to use `fastmcp run ` command. For example: `fastmcp run server.py:mcp`
+* Note that FastMCP does not require the `if __name__=="__main__":` block in the server file, and will ignore it if it is present. Instead, it looks for the server object provided in the CLI command (here, `mcp`). If no server object is provided, fastmcp run will automatically search for servers called “mcp”, “app”, or “server” in the file.
+* Don't forget to point the server file while creating an instance of the your client. For instance: ```python:
+from fastmcp import Client
+client = Client("server.py")
 
 
 ## How to Execute the code
-* Clone first the repository 
-* <cd first_mcp/>
-* <python client.py>
+* Clone first the repository:
+`git clone https://github.com/Roseco-crs/first-mcp/`
+* Run the server with: 
+`python server.py`
+* run the client with:
+`python client.py`
 
