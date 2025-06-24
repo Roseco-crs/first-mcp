@@ -1,5 +1,6 @@
 from fastmcp import Client
 import asyncio
+from typing import Union
 
 # Point the client to the server file. Or connects the client directly to the server instance
 client = Client("server.py") 
@@ -17,6 +18,8 @@ async def test_greet(name: str):
 
 
 asyncio.run(test_greet("Beatrice Nannh"))
+
+
 
 
 # Note: There are two things to know

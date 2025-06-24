@@ -17,3 +17,16 @@ if __name__ == "__main__":
     mcp.run(transport="stdio")
 
 
+# from typing import Annotated, Optional
+# from pydantic import Field, BaseModel
+# class Users(BaseModel):
+#     name: str
+#     eamil: str = Field(description="Email of the user")
+#     age: Optional[int] = Field(default= None, description="Age of the user")
+#     # age: int | None = None      # Optional[int]
+#     is_active: bool = True
+
+
+ 
+
+    
