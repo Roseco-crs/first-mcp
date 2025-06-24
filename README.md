@@ -1,5 +1,5 @@
-## Quickstart MCP project
-Welcome to my first quickstart MCP.
+## First MCP project
+Welcome to my first MCP project.
 
 ## What is MCP?
 
